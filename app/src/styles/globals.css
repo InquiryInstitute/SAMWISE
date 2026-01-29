@@ -1,0 +1,77 @@
+/* SAMWISE Global Styles */
+
+:root {
+  /* Color palette — warm earth tones */
+  --parchment: #f7f3eb;
+  --parchment-dark: #ede6d6;
+  --ink: #2c2416;
+  --ink-light: #4a3f2f;
+  --ink-muted: #7d7264;
+  --gold: #b8860b;
+  --gold-light: #daa520;
+  --teal: #2d6a6a;
+  --teal-light: #3d8a8a;
+  --rust: #8b4513;
+  --sage: #6b8e6b;
+  
+  /* Typography */
+  --font-serif: 'Crimson Pro', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--parchment);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--teal-light);
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+/* Ambient background utility */
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(218, 165, 32, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(45, 106, 106, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(139, 69, 19, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -2;
+}
