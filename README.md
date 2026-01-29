@@ -357,9 +357,9 @@ SAMWISE/
 
 ## 🔗 Links
 
-- **Live Site:** [inquiry.institute/SAMWISE](https://inquiry.institute/SAMWISE)
+- **Live Site:** [sam.inquiry.institute](https://sam.inquiry.institute)
 - **Inquiry Institute:** [inquiry.institute](https://inquiry.institute)
-- **Documentation:** [GitHub Pages](https://inquiryinstitute.github.io/SAMWISE)
+- **About SAMWISE:** [inquiry.institute/SAMWISE](https://inquiry.institute/SAMWISE)
 
 ---
 
