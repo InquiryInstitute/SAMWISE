@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam — Your Learning Companion</title>
-    <meta name="description" content="Sam is your personalized learning companion. Coming soon.">
+    <meta name="description" content="Sam is your personalized learning companion. Sign in to begin your journey.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
             --ink-light: #4a3f2f;
             --ink-muted: #7d7264;
             --gold: #b8860b;
+            --gold-light: #daa520;
             --teal: #2d6a6a;
             --teal-light: #3d8a8a;
         }
@@ -32,9 +33,6 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
             color: var(--ink);
         }
 
@@ -48,67 +46,193 @@
             z-index: -1;
         }
 
-        .container {
-            max-width: 600px;
-            text-align: center;
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(44, 36, 22, 0.1);
         }
 
         .logo {
-            font-size: 4rem;
-            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .logo-icon {
+            font-size: 1.5rem;
             color: var(--teal);
-            animation: gentle-pulse 4s ease-in-out infinite;
         }
 
-        @keyframes gentle-pulse {
-            0%, 100% { opacity: 0.8; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.02); }
+        .logo-text {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
         }
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 300;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.02em;
-        }
-
-        h1 span {
+        .logo-text span {
             color: var(--gold);
         }
 
-        .tagline {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: var(--ink-muted);
-            margin-bottom: 2rem;
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
         }
 
-        .description {
+        .btn {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.6rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 200ms ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--ink-muted);
+        }
+
+        .btn-ghost:hover {
+            color: var(--ink);
+            background: rgba(44, 36, 22, 0.05);
+        }
+
+        .btn-primary {
+            background: var(--teal);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--teal-light);
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .welcome {
+            max-width: 500px;
+        }
+
+        .sam-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            color: white;
+            box-shadow: 0 4px 20px rgba(45, 106, 106, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .greeting {
             font-size: 1.25rem;
-            line-height: 1.7;
             color: var(--ink-light);
             margin-bottom: 2rem;
+            line-height: 1.6;
         }
 
-        .status {
+        .sign-in-box {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(44, 36, 22, 0.08);
+            border: 1px solid rgba(44, 36, 22, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        .sign-in-box p {
+            font-size: 0.95rem;
+            color: var(--ink-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-github {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--ink);
+            color: white;
+            padding: 0.875rem 1.75rem;
+            font-size: 1rem;
+        }
+
+        .btn-github:hover {
+            background: var(--ink-light);
+        }
+
+        .btn-github svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .features {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--teal);
+        }
+
+        .feature-text {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.8rem;
+            color: var(--ink-muted);
+        }
+
+        /* Coming soon badge */
+        .badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             font-family: 'DM Sans', sans-serif;
-            font-size: 0.9rem;
-            color: var(--teal);
-            padding: 0.75rem 1.5rem;
-            background: white;
+            font-size: 0.75rem;
+            color: var(--gold);
+            padding: 0.4rem 0.8rem;
+            background: rgba(184, 134, 11, 0.1);
             border-radius: 50px;
-            box-shadow: 0 2px 12px rgba(45, 106, 106, 0.15);
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
         }
 
-        .status-dot {
-            width: 8px;
-            height: 8px;
+        .badge-dot {
+            width: 6px;
+            height: 6px;
             background: var(--gold);
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
@@ -119,67 +243,13 @@
             50% { opacity: 0.5; }
         }
 
-        .quote {
-            border-left: 2px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem auto;
-            max-width: 400px;
-            text-align: left;
-        }
-
-        .quote blockquote {
-            font-style: italic;
-            font-size: 1.1rem;
-            color: var(--ink-light);
-            margin-bottom: 0.5rem;
-        }
-
-        .quote cite {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.85rem;
-            color: var(--ink-muted);
-            font-style: normal;
-        }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        .link {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.9rem;
-            color: var(--ink-muted);
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border: 1px solid rgba(44, 36, 22, 0.15);
-            border-radius: 6px;
-            transition: all 200ms ease;
-        }
-
-        .link:hover {
-            color: var(--ink);
-            border-color: var(--teal);
-            background: white;
-        }
-
-        .link-primary {
-            background: var(--teal);
-            color: white;
-            border-color: var(--teal);
-        }
-
-        .link-primary:hover {
-            background: var(--teal-light);
-            color: white;
-        }
-
+        /* Footer */
         footer {
-            position: fixed;
-            bottom: 2rem;
+            padding: 1.5rem 2rem;
+            border-top: 1px solid rgba(44, 36, 22, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-family: 'DM Sans', sans-serif;
             font-size: 0.8rem;
             color: var(--ink-muted);
@@ -194,15 +264,33 @@
             text-decoration: underline;
         }
 
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* Responsive */
         @media (max-width: 600px) {
+            header {
+                padding: 1rem;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+
             h1 {
-                font-size: 2.5rem;
+                font-size: 1.75rem;
             }
-            .logo {
-                font-size: 3rem;
+
+            .features {
+                gap: 1rem;
             }
-            .description {
-                font-size: 1.1rem;
+
+            footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
             }
         }
     </style>
@@ -210,43 +298,76 @@
 <body>
     <div class="ambient-bg"></div>
     
-    <div class="container">
-        <div class="logo">◐</div>
-        
-        <h1>SAM<span>WISE</span></h1>
-        
-        <p class="tagline">Your Learning Companion</p>
-        
-        <div class="status">
-            <span class="status-dot"></span>
-            Coming Soon
+    <header>
+        <a href="/" class="logo">
+            <span class="logo-icon">◐</span>
+            <span class="logo-text">SAM<span>WISE</span></span>
+        </a>
+        <div class="header-actions">
+            <a href="https://inquiry.institute/SAMWISE" class="btn btn-ghost">About</a>
+            <button class="btn btn-primary" onclick="handleSignIn()">Sign In</button>
         </div>
-        
-        <p class="description">
-            A patient, attentive AI companion that learns alongside you — 
-            asking thoughtful questions, remembering what matters, 
-            and returning to ideas over time.
-        </p>
-        
-        <div class="quote">
-            <blockquote>
-                "I can't carry it for you, but I can carry you."
-            </blockquote>
-            <cite>— Samwise Gamgee</cite>
+    </header>
+    
+    <main>
+        <div class="welcome">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Coming Soon
+            </div>
+            
+            <div class="sam-avatar">◐</div>
+            
+            <h1>Hello, I'm Sam</h1>
+            
+            <p class="greeting">
+                I'm here to learn alongside you — asking questions, 
+                remembering what matters, and growing together over time.
+            </p>
+            
+            <div class="sign-in-box">
+                <p>
+                    Sign in with GitHub to begin your personalized learning journey. 
+                    Your conversations and memories are stored in your own repository.
+                </p>
+                <button class="btn btn-github" onclick="handleSignIn()">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Continue with GitHub
+                </button>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">?</div>
+                    <div class="feature-text">Thoughtful questions</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">∞</div>
+                    <div class="feature-text">Lifelong memory</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">◐</div>
+                    <div class="feature-text">Grows with you</div>
+                </div>
+            </div>
         </div>
-        
-        <div class="links">
-            <a href="https://inquiry.institute/SAMWISE" class="link link-primary">
-                Learn More
-            </a>
-            <a href="https://github.com/InquiryInstitute/SAMWISE" class="link">
-                View on GitHub
-            </a>
-        </div>
-    </div>
+    </main>
     
     <footer>
-        Part of <a href="https://inquiry.institute">Inquiry Institute</a>
+        <span>Part of <a href="https://inquiry.institute">Inquiry Institute</a></span>
+        <div class="footer-links">
+            <a href="https://inquiry.institute/SAMWISE">Learn More</a>
+            <a href="https://github.com/InquiryInstitute/SAMWISE">GitHub</a>
+        </div>
     </footer>
+
+    <script>
+        function handleSignIn() {
+            // TODO: Implement GitHub OAuth
+            alert('GitHub sign-in coming soon!\n\nSam will remember your journey in your own GitHub repository.');
+        }
+    </script>
 </body>
 </html>
