@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMWISE — Inquiry Institute</title>
+    <meta name="description" content="Sam is a Supportive Assistant for Memory, Writing, Inquiry, Sense-making, and Exploration. A personalized AI learning companion that grows with you.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ambient background -->
+    <div class="ambient-bg"></div>
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="https://inquiry.institute" class="nav-logo">
+            <span class="logo-mark">◯</span>
+            <span class="logo-text">Inquiry Institute</span>
+        </a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="https://github.com/InquiryInstitute/SAMWISE" class="nav-cta">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Learning Companion</div>
+            <h1 class="hero-title">
+                <span class="title-sam">SAM</span><span class="title-wise">WISE</span>
+            </h1>
+            <p class="hero-acronym">
+                Supportive Assistant for Memory, Writing,<br>
+                Inquiry, Sense-making, and Exploration
+            </p>
+            <p class="hero-description">
+                A patient, attentive AI companion that learns alongside you — 
+                asking thoughtful questions, remembering what matters to you, 
+                and returning to ideas over time so understanding can grow.
+            </p>
+            <div class="hero-quote">
+                <blockquote>
+                    "I can't carry it for you, but I can carry you."
+                </blockquote>
+                <cite>— Samwise Gamgee</cite>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="drawer-preview">
+                <div class="drawer-tab">
+                    <span class="drawer-icon">◐</span>
+                </div>
+                <div class="drawer-panel">
+                    <div class="message sam-message">
+                        <span class="message-text">What are you curious about today?</span>
+                    </div>
+                    <div class="message pupil-message">
+                        <span class="message-text">I'm reading about photosynthesis but I don't understand where the energy actually goes...</span>
+                    </div>
+                    <div class="message sam-message">
+                        <span class="message-text">That's a wonderful question to sit with. When you imagine a plant absorbing sunlight, what do you picture happening inside?</span>
+                    </div>
+                    <div class="typing-indicator">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-content">
+            <h2 class="section-title">What Sam Is</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">◉</div>
+                    <h3>Personated</h3>
+                    <p>Sam has a consistent voice and presence — a named companion, not an anonymous tool.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">?</div>
+                    <h3>Inquiry-First</h3>
+                    <p>Sam asks thoughtful questions rather than providing ready answers. Understanding grows through exploration.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">◐</div>
+                    <h3>Adaptive</h3>
+                    <p>Sam adjusts to each learner's developmental stage — simpler for young pupils, more sophisticated for adults.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">∞</div>
+                    <h3>Memory-Bearing</h3>
+                    <p>With your consent, Sam remembers what matters — returning to ideas over time as understanding deepens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Sam Is Not -->
+    <section class="section contrast-section">
+        <div class="section-content">
+            <h2 class="section-title">What Sam Is Not</h2>
+            <div class="not-grid">
+                <div class="not-item">
+                    <span class="not-icon">✕</span>
+                    <span class="not-text">An authority or evaluator</span>
+                </div>
+                <div class="not-item">
+                    <span class="not-icon">✕</span>
+                    <span class="not-text">A grader or judge</span>
+                </div>
+                <div class="not-item">
+                    <span class="not-icon">✕</span>
+                    <span class="not-text">A therapist</span>
+                </div>
+                <div class="not-item">
+                    <span class="not-icon">✕</span>
+                    <span class="not-text">A surveillance system</span>
+                </div>
+                <div class="not-item">
+                    <span class="not-icon">✕</span>
+                    <span class="not-text">A recommendation engine</span>
+                </div>
+                <div class="not-item">
+                    <span class="not-icon">✕</span>
+                    <span class="not-text">A replacement for teachers or parents</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section philosophy-section">
+        <div class="section-content">
+            <h2 class="section-title">The Samwise Posture</h2>
+            <p class="section-intro">
+                Sam is inspired by Samwise Gamgee — not in explicit language, but in posture and presence.
+            </p>
+            <div class="posture-grid">
+                <div class="posture-item">
+                    <h3>Loyal</h3>
+                    <p>Committed to your journey, wherever it leads</p>
+                </div>
+                <div class="posture-item">
+                    <h3>Patient</h3>
+                    <p>Never rushing understanding or pushing toward answers</p>
+                </div>
+                <div class="posture-item">
+                    <h3>Attentive</h3>
+                    <p>Listening carefully before responding</p>
+                </div>
+                <div class="posture-item">
+                    <h3>In Service</h3>
+                    <p>Supporting your thinking, not directing it</p>
+                </div>
+                <div class="posture-item">
+                    <h3>Steady</h3>
+                    <p>Consistent across the long journey of learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section how-section">
+        <div class="section-content">
+            <h2 class="section-title">How Sam Works</h2>
+            
+            <div class="feature-block">
+                <div class="feature-text">
+                    <h3>The Drawer</h3>
+                    <p>
+                        Sam lives in a slide-out drawer on every learning page. 
+                        You control when to open it — Sam never auto-opens, 
+                        never interrupts, never blocks your reading.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Closed by default — just a small icon</li>
+                        <li>Half-open for conversation while you read</li>
+                        <li>Full-open when you want focused dialogue</li>
+                    </ul>
+                </div>
+                <div class="feature-visual drawer-states">
+                    <div class="state-demo">
+                        <div class="state-icon closed">◐</div>
+                        <span>Closed</span>
+                    </div>
+                    <div class="state-demo">
+                        <div class="state-icon half">◑</div>
+                        <span>Half-open</span>
+                    </div>
+                    <div class="state-demo">
+                        <div class="state-icon full">●</div>
+                        <span>Full</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-block reverse">
+                <div class="feature-text">
+                    <h3>Questions Over Answers</h3>
+                    <p>
+                        Sam mostly asks questions — about 70% of responses are thoughtful inquiries
+                        that help you think deeper. When Sam does explain something, it's brief, 
+                        provisional, and followed by a question.
+                    </p>
+                    <div class="ratio-bar">
+                        <div class="ratio-segment questions" style="width: 70%">
+                            <span>Questions</span>
+                        </div>
+                        <div class="ratio-segment reflection" style="width: 20%">
+                            <span>Reflection</span>
+                        </div>
+                        <div class="ratio-segment explanation" style="width: 10%">
+                            <span>Explain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-block">
+                <div class="feature-text">
+                    <h3>Your Memory, Your Choice</h3>
+                    <p>
+                        Sam remembers only what you choose to keep. Your memories are stored 
+                        in your own repository — you own the data. Sam uses memory to connect 
+                        ideas across time, never to judge or evaluate.
+                    </p>
+                    <div class="memory-types">
+                        <div class="memory-type">
+                            <strong>Session</strong>
+                            <span>This conversation only</span>
+                        </div>
+                        <div class="memory-type">
+                            <strong>Course</strong>
+                            <span>Within your current study</span>
+                        </div>
+                        <div class="memory-type">
+                            <strong>Lifelong</strong>
+                            <span>Across your learning journey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developmental Phases -->
+    <section class="section phases-section">
+        <div class="section-content">
+            <h2 class="section-title">Growing With You</h2>
+            <p class="section-intro">
+                Sam adapts to where you are in your learning journey, 
+                adjusting language and depth appropriately.
+            </p>
+            <div class="phases-timeline">
+                <div class="phase">
+                    <div class="phase-age">6–9</div>
+                    <div class="phase-content">
+                        <h4>Early Inquiry</h4>
+                        <p>Simple language, concrete questions, gentle exploration</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-age">10–13</div>
+                    <div class="phase-content">
+                        <h4>Formative Inquiry</h4>
+                        <p>Gentle comparison, vocabulary building, connecting ideas</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-age">14–18</div>
+                    <div class="phase-content">
+                        <h4>Reflective Inquiry</h4>
+                        <p>Abstract reasoning, questioning assumptions, deep reflection</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-age">Adult</div>
+                    <div class="phase-content">
+                        <h4>Self-Directed Inquiry</h4>
+                        <p>Peer-level synthesis, pattern recognition, lifelong learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Parents & Educators -->
+    <section class="section parents-section">
+        <div class="section-content">
+            <h2 class="section-title">For Parents & Educators</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h3>Safe by Design</h3>
+                    <p>
+                        Sam is built to be safe for children of all ages. Content is filtered,
+                        responses are age-appropriate, and guardians have oversight and control.
+                    </p>
+                </div>
+                <div class="trust-item">
+                    <h3>Transparent Memory</h3>
+                    <p>
+                        Nothing is stored without consent. All memories live in the pupil's own
+                        repository. Parents can review and manage memories at any time.
+                    </p>
+                </div>
+                <div class="trust-item">
+                    <h3>No Hidden Agendas</h3>
+                    <p>
+                        Sam doesn't optimize engagement, push content, track behavior, or try to
+                        persuade beliefs. Sam's only goal is to support genuine learning.
+                    </p>
+                </div>
+                <div class="trust-item">
+                    <h3>Supports, Doesn't Replace</h3>
+                    <p>
+                        Sam complements human teachers and parents, never replaces them. 
+                        Sam helps pupils think, but humans guide the journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Promise -->
+    <section class="section promise-section">
+        <div class="section-content">
+            <div class="promise-card">
+                <h2>Sam's Promise</h2>
+                <div class="promise-items">
+                    <p><strong>Sam does not rush.</strong></p>
+                    <p><strong>Sam does not judge.</strong></p>
+                    <p><strong>Sam stays with the Pupil.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-mark">◯</span>
+                <span>Inquiry Institute</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://inquiry.institute">Home</a>
+                <a href="https://github.com/InquiryInstitute/SAMWISE">GitHub</a>
+                <a href="https://github.com/InquiryInstitute/SAMWISE/blob/main/README.md">Documentation</a>
+            </div>
+            <p class="footer-quote">
+                "There's some good in this world, and it's worth fighting for."
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card, .not-item, .posture-item, .phase, .trust-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
