@@ -340,26 +340,37 @@ SAMWISE is designed to be:
 
 ```
 SAMWISE/
-├── README.md                 # This file
+├── README.md                 # This file (design document)
 ├── TODO.md                   # Implementation roadmap
-├── docs/                     # GitHub Pages site
-│   ├── index.html           # Main page (lives at /SAMWISE)
-│   ├── styles.css           # Styling
-│   └── assets/              # Images and resources
-├── src/                      # Source code (coming soon)
-│   ├── frontend/            # Drawer UI component
-│   ├── backend/             # API and orchestration
+├── docs/                     # Temporary placeholder (will become app)
+├── app/                      # SAMWISE application (coming soon)
+│   ├── src/                 # Application source
+│   │   ├── components/      # React components (Drawer, Chat, etc.)
+│   │   ├── lib/             # Utilities and helpers
+│   │   └── styles/          # Application styles
+│   └── public/              # Static assets
+├── api/                      # Backend services
+│   ├── src/                 # API source code
 │   └── mcp/                 # MCP tool implementations
 └── prompts/                  # System prompts and templates
 ```
+
+## 🌐 Domain Architecture
+
+| Domain | Purpose |
+|--------|---------|
+| `sam.inquiry.institute` | **The App** — Personalized SAMWISE companion for each user |
+| `inquiry.institute/SAMWISE` | **About Page** — Public description of what SAMWISE is |
+| `github.com/.../SAMWISE` | **Source** — Code, docs, and implementation |
 
 ---
 
 ## 🔗 Links
 
-- **Live Site:** [sam.inquiry.institute](https://sam.inquiry.institute)
-- **Inquiry Institute:** [inquiry.institute](https://inquiry.institute)
+- **SAMWISE App:** [sam.inquiry.institute](https://sam.inquiry.institute) *(coming soon)*
 - **About SAMWISE:** [inquiry.institute/SAMWISE](https://inquiry.institute/SAMWISE)
+- **Inquiry Institute:** [inquiry.institute](https://inquiry.institute)
+- **Developer Docs:** [GitHub Wiki](https://github.com/InquiryInstitute/SAMWISE/wiki)
 
 ---
 

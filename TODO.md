@@ -4,14 +4,27 @@
 
 ---
 
+## Domain Architecture
+
+| Domain | Purpose | Status |
+|--------|---------|--------|
+| `sam.inquiry.institute` | Personalized SAMWISE app | 🟡 Placeholder |
+| `inquiry.institute/SAMWISE` | About/marketing page | ✅ Live |
+| GitHub repo | Source code & docs | ✅ Live |
+
+---
+
 ## Phase 0: Foundation & Setup ✅
 
 - [x] Create GitHub repository
 - [x] Write design document (README.md)
-- [x] Set up GitHub Pages
-- [ ] Create project structure
+- [x] Set up subdomain (sam.inquiry.institute)
+- [x] Create about page (inquiry.institute/SAMWISE)
+- [x] Set up placeholder page
+- [ ] Create app project structure
 - [ ] Set up development environment
 - [ ] Configure CI/CD pipeline
+- [ ] Choose hosting (Fly.io / Vercel / etc.)
 
 ---
 
